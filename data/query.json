@@ -1,0 +1,65 @@
+[
+    {
+        "explanation": "Välkommen till denna tipspromenad med 5 frågor, du får en chans att välja så klicka försiktigt. Lycka till!"
+    },
+    {
+        "question": "Vad är roten ur 49?",
+        "options": [
+            "4",
+            "7",
+            "9"
+        ],
+        "rightanswer": 1,
+        "trivia": "Helt rätt, svaret är 7",
+        "triviaWrong": "Fel, svaret är 7"
+        
+    },
+    {
+        "question": "Vilken europeisk monark, samtida med kung Adolf Fredrik av Sverige, anses vara känd för att ha haft en betydande roll i att förvandla sitt land till en betydande europeisk makt under 1700-talet??",
+        "options": [
+            "Fredrik II av Preussen",
+            "Maria Theresa av Österrike",
+            "Karl III av Spanien"
+        ],
+        "rightanswer": 0,
+        "trivia": "Rätt! Fredrik II av Preussen, även känd som Fredrik den store, var en framstående monark under 1700-talet och spelade en viktig roll i att stärka Preussen som en betydande europeisk makt.",
+        "triviaWrong": "Fel, svaret är Fredrik II av Preussen"
+    },
+    {
+        "question": "Vilken vetenskapsman formulerade teorin om relativitet, vilken omfattar både den speciella och den allmänna teorin?",
+        "options": [
+            "Isaac Newton",
+            "Albert Einstein",
+            "Niels Bohr"
+        ],
+        "rightanswer": 1,
+        "trivia": "Korrekt! Albert Einstein formulerade teorin om relativitet, som inkluderar både den speciella och den allmänna teorin.",
+        "triviaWrong": "Fel, svaret är Albert Einstein"
+    },
+    {
+        "question": "Vilken dynasti tillhör den nuvarande svenska kungafamiljen?",
+        "options": [
+            "Huset Holstein-Gottorp",
+            "Huset Vasa",
+            "Huset Bernadotte"
+        ],
+        "rightanswer": 2,
+        "trivia": "Jean Baptiste Bernadotte blev kung Karl XIV Johan och inledde den nuvarande dynastin som fortfarande regerar Sverige.",
+        "triviaWrong": "Fel, svaret är Huset Bernadotte"
+        
+    },
+    {
+        "question": "Vad har jag i min ficka?",
+        "options": [
+            "En fråga",
+            "Ett tuggummi",
+            "En krona"
+        ],
+        "rightanswer": 1,
+        "trivia": "Helt rätt, svaret är ett tuggummi",
+        "triviaWrong": "Fel, svaret är ett tuggummi"
+        
+    }
+
+    
+]

@@ -1,0 +1,102 @@
+@import './style.css';
+@import './shapes.css';
+
+.content {
+    text-align: center;
+}
+
+.startButton {
+    align-content: center;
+}
+
+.question {
+    font-size: 40px;
+}
+
+.queryButton {
+    position: relative;
+    width: 100px;
+    padding: 2em;
+    color: #fff;
+    background-color: red;
+}
+
+.queryButton:hover {
+    cursor: pointer;
+}
+
+.queryBox {
+    background-color: #ddd;
+    border: 2px solid rgba(0, 0, 0, 0.378);
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.queryBox:hover {
+    cursor: pointer;
+}
+
+.selected {
+    border: 4px solid #040ab6;
+}
+
+.rightAnswer {
+    background-color: rgba(8, 164, 8, 0.844);
+}
+
+.wrongAnswer {
+    background-color: rgb(250, 39, 39);
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    width: 200px;
+}
+
+table td, table th {
+border: 1px solid #ddd;
+padding: 8px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: #2004aa;
+color: white;
+}
+
+.gallery {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    margin: auto;
+    max-width: 600px;
+}
+
+.hoverPic {
+    transition: transform 0.3s ease
+}
+
+.hoverPic:hover {
+    cursor: pointer;
+    transform: scale(1.1)
+}
+
+
+.rightAnswerMem {
+    border: 2px solid rgba(8, 164, 8, 0.844);
+    filter: brightness(1)
+}
+
+.wrongAnswerMem {
+    filter: brightness(1);
+    border: 2px solid rgb(250, 39, 39);
+}

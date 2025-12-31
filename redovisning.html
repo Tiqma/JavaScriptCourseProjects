@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <title>Redovisning av kursmoment i kursen "js"</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header id="naven">
+        </header>
+        <script src="js/nav.js"></script>
+        <div class="content">
+            <div class="row">
+                <h1>Redovisning av kursmoment i kursen XXX</h1>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <div class="item">
+                        <h2>Kmom01</h2>
+                        <p>Här är redovisningstexten</p>
+                    </div>
+                    <div class="item">
+                        <h2>Kmom02</h2>
+                        <p>Här är redovisningstexten</p>
+                    </div>
+                    <div class="item">
+                        <h2>Kmom03</h2>
+                        <p>Här är redovisningstexten</p>
+                    </div>
+                    <div class="item">
+                        <h2>Kmom04</h2>
+                        <p>Här är redovisningstexten</p>
+                    </div>
+                    <div class="item">
+                        <h2>Kmom05</h2>
+                        <p>Här är redovisningstexten</p>
+                    </div>
+                    <div class="item">
+                        <h2>Kmom06</h2>
+                        <p>Här är redovisningstexten</p>
+                    </div>
+                    <div class="item">
+                        <h2>Kmom10</h2>
+                        <h2>Deltest 1</h2>
+    <p>
+        Jag har påbörjat arbetet med att sätta samman HTML-kod med olika element, vilka jag kan 
+        hämta från JavaScript och experimentera med. Processen inleds genom att från kmom10.js skapa 
+        en eventListener som initierar testet. Jag genererar tre rutor med alternativ, och när en ruta 
+        klickas på, använder jag selectCheckQuery från modulen query.js för att hämta en query.json fil.
+         Och efter man klickat så försvinner eventlistenern så man inte kan klicka igen. Denna fil 
+         innehåller alla frågor och tillhörande alternativ som placeras i rutorna. Inom JSON-filen 
+         finns också en "rightanswer", som representerar det korrekta indexet/valuen som tilldelats 
+         till de tre rutorna. Om man klickar rätt ges rutan en klass(“rightAnswer”) och 
+         vid fel tilldelas “wrongAnswer” och en passande text tillkommer. Poäng adderas med 
+         hjälp av addToResult funktionen som kommer förekomma i alla mina moduler. När man gjort 
+         alla frågor exkaveras funktionen showSubmitButton och fizzBuzzStart där man sätter upp 
+         för nästa test.        
+    </p>
+
+    <h2>Deltest 2</h2>
+    <p>
+        Testet utförs i modulen fizzbuzz.js där funktionen fizzBuzz() sätter upp principen. Jag får 
+        ut ett random nummer från 1-100 och sedan adderar jag 8 nummer till det. Dessa nummer kollar 
+        vi om det är fizzbuzz, fizz, buzz eller själva numret vilket sätts in i en lista. Denna lista
+         skrivs ut och vi använder det sista elementet för att jämföra om användaren klickar på rätt
+          alternativ utifrån de 4 boxar som finns. Med funktionen giveBoxEvent() ges eventlistenern 
+          och har man klickat så tas även eventlistern bort. Alla boxar får sin egna value som jämförs
+           med sista elementet. Med funktionen fizzCheck() utförs jämförelsen och poängen delas ut och 
+           man får en passande klass.
+    </p>
+
+    <h2>Deltest 3</h2>
+    <p>
+        Testet startas från memory.js modulen där memoryIntro() funktionen exkaveras först. 
+        Därifrån startas memory() funktionen där det finns en lista med olika föremål.
+         Den listan använder vi funktionen shufflePics() vilket lägger föremålen i nya index 
+         i en ny lista. Detta gör vi två gånger så att vi har två listor. Sen använder vi en 
+         foreachloop för att mata ut dem i html-dokumentet i form av bilder vilket vi har sparade
+          i /img/ med samma namn. Varje bild får sin egen value vilket är föremålet. Efter 5 
+          sekunder får alla bilder sin brightness skalat ner till 0 vilket gömmer dem. Med den andra 
+          listan skrivs en lista ut vilket användaren ska klicka på var bilden utifrån listans numrering 
+          och försöka komma ihåg vart just den bilden befann sig. Med funktionen pickRight() 
+          får alla bilder en eventListener och med hjälp av funktionen selectCheckMemory() 
+          kollar vi om den bilden man klickar på stämmer ihop med den bilden man ska klicka
+           på utifrån listan. Om båda value är desamma får man rätt bilden får brightness(1) 
+           så man kan se den plus att listans nuvarande alternativ blir målad grön. Klickar 
+           man fel så blir den röd och spelet avslutas med gameoverMemory() funktionen och 
+           eventListenerna försvinner.
+    </p>
+
+    <h2>Deltest 4</h2>
+    <p>
+        Detta testet körs i forms.js och har nästan exakt samma upplägg som deltest 3. Många 
+        funktioner är densamma fast jag har behövt göra om innehållet så att det passar just 
+        detta moment. I formsIntro() startar jag en timeout av 15 sek och forms() funktionen 
+        startas. Jag har globalt hämtat en forms.json fil som har beskrivningar av olika former 
+        och vilka färger de ska ha. Med en foreachloop ritar jag ut dessa former och ger dem olika 
+        värden och klasser utifrån .json filen. Med hjälp av shapes.css ritas de ut. Varje form får 
+        sin value och sen ska man likt deltest 3 klicka på den aktuella formen utifrån listan. Klickar
+         man rätt så så sätts den formens brightness till 0 och man kan inte klicka på den igen. 
+         Och listan målas grön. Klickar man fel så målas den röd och man får ingen poäng. Efter 
+         15 sek är det slut och man kan inte klicka mer.
+    </p>
+
+    <h2>Deltest 5</h2>
+    <p>
+        Detta testet utförs i modulen perception.js och har även den ett liknande upplägg som deltest 
+        3 och 4. Som vanligt startas det med en perceptionIntro() vilket förklarar testet och sen 
+        exkaveras perception() funktionen. Vi hämtar även denna gången globalt ut forms.json filen 
+        vilket hjälper oss att måla ut och sätta värden på våra olika former. Vi målar ut formen i en 
+        sekund och ger den en eventListener. Klickar man på den kollar vi med selectCheckPerception() 
+        funktionen om det stämmer in på de krav som fanns. Stämmer det får adderas +1, annars subtraherar 
+        man -1. Efter det visas hur många rätt man fick och man kan gå vidare till resultatet för alla 
+        testerna.
+
+    </p>
+
+    <h2>Window.reset()</h2>
+    <p>
+        För att fuska har jag en funktion i kmom10.js. Varje gång man startar ett nytt moment 
+        sätts en ny sessionStorage variabel. Beroende på vad den har för värde när man skriver 
+        in window.reset() så startas den om utifrån var man befinner sig. Poäng sätts också även till 0.
+
+    </p>
+
+    <h2>Resultat</h2>
+    <p>
+        I modulen result.js finns funktionen result() där man hämtar med hjälp av sessionStorage 
+        de olika poäng som användaren har åstadkommit. De skrivs ut och även adderas till totalScore 
+        för att se användaren totala poäng. Utifrån den kan man få lite olika förklaring över hur smart 
+        man är.
+    </p>
+
+    <h2>Allmänt</h2>
+    <p>
+        Det svåraste för mig var att komma igång och bygga upp grunden, efter det flöt det på. 
+        Eftersom man märkte att det man gjort i föregående moduler kunde återskapas i följande 
+        modul blev det enklare och enklare att utföra projektet. Hade dock lite problem i slutet 
+        att få poängen att fungera som de skulle. Mycket strul kring att poäng sparades från 
+        föregående försök av testet eller att det inte startade om från noll om man gjorde en 
+        window.reset(). Valde att använda mig utav sessionStorage så kanske därför det blev så 
+        mycket strul. Jag tycker projektet var rimligt och jag lärde mig ännu mer utav att sitta 
+        och klura med de olika momenten. 
+    </p>
+
+    <h2>Sluttankar</h2>
+    <p>
+        Jag tycker materialet och handledningen har varit bra, inga konstigheter. Har mest använt mig 
+        utav youtube och de olika artiklarna som tillförts. Övningarna har varit utmanande 
+        och intressanta. Kanske hade velat ha mer handledning och övningar hur man bygger upp 
+        moduler som vi gjorde med hangman uppgiften då jag inte kände mig bekväm i det och inte
+         försökte mig på det i detta projekt. Jag skulle kunna rekommendera kursen till de som 
+         frågar. Stark 8/10.
+    </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>

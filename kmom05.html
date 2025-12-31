@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <title>Kmom05</title>
+        <link rel="stylesheet" href="css/kmom05.css">
+    </head>
+    <body>
+        <header id="naven">
+        </header>
+        <div class="content">
+            <select id="myselect">
+                <option value="0">Choose...</option>
+
+            </select>
+            <h1>Result</h1>
+            <table id="mytable">
+                <tr>
+                    <th>Year</th>
+                    <th>Country</th>
+                    <th>CO2</th>
+                    <th>co2_per_capita</th>
+                    <th>coal_co2</th>
+                    <th>Population</th>
+                </tr>
+            </table>
+            <br>
+            <h1>Scoreboard</h1>
+            <table id="scoreboard" class="scoreboard">
+                <tr>
+                    <th>Sweden</th>
+                    <th>Denmark</th>
+                    <th>Norway</th>
+                </tr>
+                <tr>
+                    <td id="scoreSweden"></td>
+                    <td id="scoreDenmark"></td>
+                    <td id="scoreNorway"></td>
+                </tr>
+            </table>
+            <button id="reset">Reset Score</button>
+        </div>
+        <script src="js/nav.js"></script>
+        <script type="module" src="js/kmom05.js"></script>
+        
+    </body>
+</html>
